@@ -4,12 +4,14 @@ var router = express.Router();
 console.log(__dirname);
 const sqlite3 = require('sqlite3').verbose();
 //let db = new sqlite3.Database(':memory:');
-let db = new sqlite3.Database('/Users/programuser/Library/Containers/com.apple.iBooksX/Data/Documents/AEAnnotation/AEAnnotation_v10312011_1727_local.sqlite', (err) => {
+// *** Enter the path to your iBooks sqlite database ***
+let db = new sqlite3.Database('/Users/<yourUsername>/Library/Containers/com.apple.iBooksX/Data/Documents/AEAnnotation/AEAnnotation_v10312011_1727_local.sqlite', (err) => {
   if (err) {
     return console.error(err.message);
   }
 });
-let books = new sqlite3.Database('/Users/programuser/Library/Containers/com.apple.iBooksX/Data/Documents/BKLibrary/BKLibrary-1-091020131601.sqlite', (err) => {
+// *** Enter the path to your iBooks sqlite database ***
+let books = new sqlite3.Database('/Users/<yourUsername>/Library/Containers/com.apple.iBooksX/Data/Documents/BKLibrary/BKLibrary-1-091020131601.sqlite', (err) => {
   if (err) {
     return console.error(err.message);
   }
