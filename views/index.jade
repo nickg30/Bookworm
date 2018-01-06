@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}, an extension for iBooks to keep better notes.
+
+
+  form(action='/books' method='post' id="booklist")
+    select(name='books')
+      each book in books
+        option(value='#{book.ZASSETID}' name="book") #{book.ZTITLE}
+      
+    br
+    br
+    input(type='submit')
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+html {
+  background: rgb(250, 250, 240);
+  width: 90vw;
+}
+body {
+  padding: 50px;
+  font: 14px "Garamond";
+  text-align: right;
+  color: rgb(104, 92, 78);
+  width: 100%;
+}
+
+a {
+  color: #8FBC8F;
+
+}
+form input{
+  font-size: 14px;
+}
+form select {
+  font-size: 2em;
+  width: 100%;
+}
+.refresh-box {
+  width: 100%;
+  
+}
+#refresh {
+  text-align: center;
+  background: #666;
+  color: aliceblue;
+}
+.notes {
+  width: 100%;
+  margin-top: 22px;
+  padding: 20px;
+  font-size: 22px;
+  float: left;
+  text-align: left;
+}
+.notes li{
+  padding-top: 10px;
+}
+nav {
+  top: 0px;
+  font-size: 40px;
+}

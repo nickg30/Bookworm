@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Click refresh to view new notes.
+  .refresh-box
+    button(type="button" onClick="refreshPage()" id="refresh") Refresh
+
+  .notes
+    ol
+      each note in notes
+        li #{note.ZANNOTATIONSELECTEDTEXT}
+
+  script.
+    function refreshPage() {
+      window.location.reload();
+    } 
