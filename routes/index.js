@@ -6,19 +6,18 @@ var logName = process.env.LOGNAME;
 console.log(__dirname);
 const sqlite3 = require('sqlite3').verbose();
 //let db = new sqlite3.Database(':memory:');
-<<<<<<< HEAD
 let db = new sqlite3.Database('/Users/'+ logName +'/Library/Containers/com.apple.iBooksX/Data/Documents/AEAnnotation/AEAnnotation_v10312011_1727_local.sqlite', (err) => {
-=======
+
 // *** Enter the path to your iBooks sqlite database ***
 let db = new sqlite3.Database('/Users/<yourUsername>/Library/Containers/com.apple.iBooksX/Data/Documents/AEAnnotation/AEAnnotation_v10312011_1727_local.sqlite', (err) => {
->>>>>>> origin/master
+
   if (err) {
     return console.error(err.message);
   }
 });
-<<<<<<< HEAD
+
 let books = new sqlite3.Database('/Users/'+ logName +'/Library/Containers/com.apple.iBooksX/Data/Documents/BKLibrary/BKLibrary-1-091020131601.sqlite', (err) => {
-=======
+
 // *** Enter the path to your iBooks sqlite database ***
 let books = new sqlite3.Database('/Users/<yourUsername>/Library/Containers/com.apple.iBooksX/Data/Documents/BKLibrary/BKLibrary-1-091020131601.sqlite', (err) => {
 >>>>>>> origin/master
