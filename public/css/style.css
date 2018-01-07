@@ -6,7 +6,7 @@ body {
   padding: 50px;
   font: 14px "Garamond";
   text-align: right;
-  color: rgb(104, 92, 78);
+  color: rgb(78, 70, 60);
   width: 100%;
 }
 
@@ -34,7 +34,7 @@ form select {
   width: 100%;
   margin-top: 22px;
   padding: 20px;
-  font-size: 22px;
+  font-size: 26px;
   float: left;
   text-align: left;
 }
